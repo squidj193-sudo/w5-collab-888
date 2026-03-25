@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="UTF-8">
   <title>我們組的 Chatbot</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="container">
@@ -21,7 +23,7 @@
     <div id="chat-box">
       <div class="message bot">
         嗨！這是我們組用 PR 協作做出來的 Chatbot 🎉
-        <span class="timestamp">10:31</span>
+        <span class="timestamp"></span>
       </div>
     </div>
 
@@ -60,7 +62,7 @@
       chatBox.scrollTop = chatBox.scrollHeight;
     }
 
-    document.getElementById('user-input').addEventListener('keypress', function(e) {
+    document.getElementById('user-input').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') sendMessage();
     });
 
@@ -70,4 +72,5 @@
   </script>
 
 </body>
+
 </html>
