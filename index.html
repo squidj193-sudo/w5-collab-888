@@ -14,10 +14,10 @@
       <!-- 組長任務：把標題改成你們組的名字 -->
       <h1>🤖 第 X 組的 Chatbot</h1>
       <p class="subtitle">W5 PR 協作練習</p>
+      <!-- 組員 D 任務：深色模式切換按鈕 -->
+      <button id="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
     </header>
-
-    <!-- 組員 A 任務：在 .message 裡加上時間戳 span -->
-    <!-- 組員 C 任務：在 header 下方加字數統計 p 元素 -->
+    <p id="char-count">字數：0</p>
     <!-- 組員 D 任務：在 header 加深色模式切換按鈕 -->
 
     <div id="chat-box">
@@ -31,9 +31,11 @@
       <input id="user-input" type="text" placeholder="輸入訊息...">
       <button onclick="sendMessage()">送出</button>
       <!-- 組員 B 任務：在這裡加清除按鈕 -->
+      <button onclick="clearChat()">清除</button>
     </div>
 
     <!-- 組員 E 任務：在這裡加鍵盤快捷鍵說明 -->
+    <p class="shortcut-hint" style="font-size: 0.9em; color: #666; text-align: center; margin-top: 10px;">💡 提示：按 <strong>Enter</strong> 鍵可以快速送出訊息</p>
     <footer></footer>
   </div>
 
@@ -59,6 +61,7 @@
       chatBox.appendChild(botDiv);
 
       input.value = '';
+      updateCharCount(); // 送出後重置字數
       chatBox.scrollTop = chatBox.scrollHeight;
     }
 
@@ -67,13 +70,31 @@
     });
 
     // 組員 B 任務：在這裡加 clearChat() 函數
+    function clearChat() {
+      document.getElementById('chat-box').innerHTML = '<div class="message bot">嗨！這是我們組用 PR 協作做出來的 Chatbot 🎉</div>';
+    }
     // 組員 C 任務：在這裡加字數統計更新邏輯
+    function updateCharCount() {
+      const input = document.getElementById('user-input');
+      const countDisplay = document.getElementById('char-count');
+      if (input && countDisplay) {
+        countDisplay.textContent = `字數：${input.value.length}`;
+      }
+    }
+
+    document.getElementById('user-input').addEventListener('input', updateCharCount);
     // 組員 D 任務：在這裡加深色模式切換函數
     window.onload = function () {
       const now = new Date();
       const timeStr = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0');
       document.querySelector('.message.bot .timestamp').textContent = timeStr;
     };
+    // 組員 D 任務：深色模式切換函數
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+      const btn = document.getElementById('dark-mode-toggle');
+      btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    }
   </script>
 
 </body>
