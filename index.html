@@ -69,6 +69,11 @@
     // 組員 B 任務：在這裡加 clearChat() 函數
     // 組員 C 任務：在這裡加字數統計更新邏輯
     // 組員 D 任務：在這裡加深色模式切換函數
+    window.onload = function () {
+      const now = new Date();
+      const timeStr = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0');
+      document.querySelector('.message.bot .timestamp').textContent = timeStr;
+    };
   </script>
 
 </body>
