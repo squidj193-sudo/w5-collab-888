@@ -164,10 +164,10 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 | 組員姓名 | 負責分支 | 主要修改內容 | PR 連結 | 是否完成 |
 | -------- | -------- | ------------ | ------- | -------- |
-| 江庭翔   |          |              |         | ✅ / ❌  |
-| 葉書愷   |          |              |         | ✅ / ❌  |
-| 吳東霖   |          |              |         | ✅ / ❌  |
-|  黃元稜  |          |              |         | ✅ / ❌  |
+| 江庭翔   |     a、c     | 時間、字數 | https://github.com/squidj193-sudo/w5-collab-888/pull/7、https://github.com/squidj193-sudo/w5-collab-888/pull/6     | ✅   |
+| 葉書愷   |     b     |      清除按鈕        |  https://github.com/squidj193-sudo/w5-collab-888/pull/3       | ✅   |
+| 吳東霖   |     d     |        深色模式      |    https://github.com/squidj193-sudo/w5-collab-888/pull/4     | ✅   |
+| 黃元稜   |     e     |       快捷鍵提示       |    https://github.com/squidj193-sudo/w5-collab-888/pull/5     | ✅   |
 
 ---
 
@@ -177,7 +177,8 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：GitHub repo → Pull requests，顯示所有 PR 的狀態（open / merged）
 
-（貼上截圖）
+<img width="1564" height="651" alt="image" src="https://github.com/user-attachments/assets/cadf3863-5a31-4780-838c-5ebd463a6e0c" />
+
 
 ---
 
@@ -185,7 +186,8 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：其中一個 PR 的描述頁面，顯示完整的「做了什麼 / 如何測試」內容
 
-（貼上截圖）
+<img width="1094" height="786" alt="image" src="https://github.com/user-attachments/assets/a489405a-ad53-45e8-b619-d140c1142db8" />
+
 
 ---
 
@@ -193,7 +195,8 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：Files changed 頁面，顯示 inline comment 的留言
 
-（貼上截圖）
+<img width="1572" height="826" alt="image" src="https://github.com/user-attachments/assets/df53ea36-7782-4685-966a-fe643e9ffe78" />
+
 
 ---
 
@@ -201,7 +204,8 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：某個 PR 頁面顯示「Merged」紫色標籤
 
-（貼上截圖）
+<img width="1084" height="220" alt="image" src="https://github.com/user-attachments/assets/3a26c192-e6a3-4711-834c-3161904da2d6" />
+
 
 ---
 
@@ -209,21 +213,16 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 截圖：用瀏覽器打開 `index.html`，顯示所有功能整合完成的畫面
 
-（貼上截圖）
+<img width="674" height="823" alt="image" src="https://github.com/user-attachments/assets/bc9eac07-e3c0-4854-b1ab-d61e5e014d4e" />
+
 
 ---
 
 ## 三、遇到的問題與解決方式
 
-**問題 1：**
+**問題 1：AI使用次數限制**
 
-解決方式：
-
----
-
-**問題 2：**
-
-解決方式：
+解決方式：換模型
 
 ---
 
@@ -231,29 +230,28 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 > 每位組員各寫 2–3 句，說明這週對 PR / Code Review 的理解或感想
 
-**（組員姓名）：**
+**葉書愷:隨著人工智慧逐步融入開發流程，程式設計正從手動撰寫轉向架構設計與系統整合。開發者的角色也因此改變，成為更偏向問題解決與策略思考的設計者。面對快速演進的技術，唯有持續學習與保持彈性，才能在時代中穩步前行。**
+**吳東霖：過去常從別人的 GitHub 下載程式使用，但自己其實沒有真正用過版本控制。現在發現它能方便地備份與管理歷史版本，之後應該會更常使用。**
 
-**（組員姓名）：**
-
-**（組員姓名）：**
-
+**江庭翔：沒想到自己幾乎沒寫任何指令，就能做出一個可互動的 AI，真的很驚人。只要有想法直接詢問 AI 就能實現，雖然有 API 次數限制，但效率遠勝從前。也讓人意識到，如果不持續精進，很可能會被淘汰。**
+**黃元稜:這次課程除了再次體會內建 AI 的強大，更大的收穫是學會如何下指令。過去常因指令不清導致結果不理想，也與他人有明顯差距。這次讓我明白，比起把 AI 當人對話，用明確的任務條件下指令，效果會更好。**
 ---
 
 ## 五、自評與互評
 
 | 評分項目            | 分數（1–5） | 說明 |
 | ------------------- | ------------ | ---- |
-| PR 描述完整度       |              |      |
-| Review comment 品質 |              |      |
-| 回應 review 的態度  |              |      |
-| 最終成果完整度      |              |      |
+| PR 描述完整度       |       5       |   超完整   |
+| Review comment 品質 |      5        |   很好   |
+| 回應 review 的態度  |       5       |   非常好   |
+| 最終成果完整度      |       5       |   超讚   |
 
 這週覺得最有挑戰的是？
 
 - [ ] 寫 PR 描述
 - [ ] 給 Code Review
 - [ ] 回應 review 並修改
-- [ ] 解決 Merge Conflict
+- [V] 解決 Merge Conflict
 - [ ] 其他：＿＿＿
 
 ---
