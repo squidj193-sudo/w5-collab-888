@@ -21,6 +21,7 @@
     <div id="chat-box">
       <div class="message bot">
         嗨！這是我們組用 PR 協作做出來的 Chatbot 🎉
+        <span class="timestamp">10:31</span>
       </div>
     </div>
 
@@ -42,15 +43,17 @@
 
       if (!text) return;
 
+      const now = new Date();
+      const timeStr = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0');
+
       const userDiv = document.createElement('div');
       userDiv.className = 'message user';
-      // 組員 A 任務：在這裡加入時間戳
-      userDiv.textContent = text;
+      userDiv.innerHTML = `${text}<span class="timestamp">${timeStr}</span>`;
       chatBox.appendChild(userDiv);
 
       const botDiv = document.createElement('div');
       botDiv.className = 'message bot';
-      botDiv.textContent = `你說了「${text}」！`;
+      botDiv.innerHTML = `你說了「${text}」！<span class="timestamp">${timeStr}</span>`;
       chatBox.appendChild(botDiv);
 
       input.value = '';
